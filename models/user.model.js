@@ -10,8 +10,8 @@ const userScehma = new Schema({
     email: { type: String },
   },
   profile: {
-    user_img: { type: URL },
-    banner_img: { type: URL },
+    user_img: { type: String },
+    banner_img: { type: String },
     first_name: { type: String },
     last_name: { type: String },
     bio: { type: String },

@@ -8,31 +8,38 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// const uri = process.env.ATLAS_URI;
+const uri = process.env.ATLAS_URI;
 
-// mongoose.connect(uri, {
-//   useNewUrlParser: true,
-//   useCreateIndex: true,
-//   useUnifiedTopology: true,
-//   useFindAndModify: false,
-// });
+mongoose.connect(uri, {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false,
+});
 
-// const connection = mongoose.connection;
+const connection = mongoose.connection;
 
-// connection.once("open", () => {
-//   console.log("MongoDB database connection establised successfully");
-// });
+connection.once("open", () => {
+  console.log("MongoDB database connection establised successfully");
+});
 
-const userRouter = require("./routes/users");
-const postsRouter = require("./routes/posts");
-const groupsRouter = require("./routes/groups");
-const messagesRouter = require("./routes/messages");
-const loginRouter = require("./routes/login");
-app.use("/api/v1", userRouter);
-app.use("/api/v1", postsRouter);
-app.use("/api/v1", groupsRouter);
-app.use("/api/v1", messagesRouter);
-app.use("/api/v1", loginRouter);
+const idx = require("./routes/routes-index");
+
+app.use("/api/v1", [
+  idx.devGroups,
+  idx.devLogin,
+  idx.devMessages,
+  idx.devPosts,
+  idx.devUsers,
+]);
+
+app.use("/api/test", [
+  idx.localGroups,
+  idx.localLogin,
+  idx.localMessages,
+  idx.localPosts,
+  idx.localUsers,
+]);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`);

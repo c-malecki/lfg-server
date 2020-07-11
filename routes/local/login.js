@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const users = require("../dumbydata/users/users.json");
+const users = require("../../dumbydata/users/users.json");
 
 router.get("/login", (req, res) => {
   const username = req.query.username;

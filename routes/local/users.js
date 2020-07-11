@@ -1,8 +1,8 @@
 const router = require("express").Router();
-const users = require("../dumbydata/users/users.json");
-const posts = require("../dumbydata/posts/posts.json");
-const messages = require("../dumbydata/messages/messages.json");
-const groups = require("../dumbydata/groups/groups.json");
+const users = require("../../dumbydata/users/users.json");
+const posts = require("../../dumbydata/posts/posts.json");
+const messages = require("../../dumbydata/messages/messages.json");
+const groups = require("../../dumbydata/groups/groups.json");
 
 router.get("/users", (req, res) => {
   res.json(users);

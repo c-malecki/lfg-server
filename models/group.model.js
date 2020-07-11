@@ -3,10 +3,10 @@ const Schema = mongoose.Schema;
 
 const groupSchema = new Schema({
   group_id: { type: String },
-  group_name: { type: string },
+  group_name: { type: String },
   group_profile: {
-    group_img: { type: URL },
-    group_banner: { type: URL },
+    group_img: { type: String },
+    group_banner: { type: String },
     date_created: { type: String },
     description: { type: String },
   },

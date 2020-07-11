@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const groups = require("../dumbydata/groups/groups.json");
-const posts = require("../dumbydata/posts/posts.json");
+const groups = require("../../dumbydata/groups/groups.json");
+const posts = require("../../dumbydata/posts/posts.json");
 
 router.get("/groups", (req, res) => {
   res.json(groups);

@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const messages = require("../dumbydata/messages/messages.json");
+const messages = require("../../dumbydata/messages/messages.json");
 
 router.get("/messages", (req, res) => {
   res.json(messages);
