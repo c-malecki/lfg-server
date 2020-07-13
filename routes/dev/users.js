@@ -10,6 +10,16 @@ router.get("/users", async (req, res) => {
     .catch((error) => res.status(400).json("Error: " + error));
 });
 
+router.get("/users/list", (req, res) => {
+  User.find({}, "-_id username user_id", (error, users) => {
+    if (error) {
+      res.status(500).json(`Error: $error`);
+      return;
+    }
+    res.json(users);
+  });
+});
+
 router.get("/users/:username", (req, res) => {
   const { username } = req.params;
   User.findOne({ username: username }, (error, user) => {

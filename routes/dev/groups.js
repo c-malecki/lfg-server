@@ -15,6 +15,9 @@ router.get("/groups/:group", (req, res) => {
       res.status(500).json(`Error: ${error}`);
       return;
     }
+    if (group === null) {
+      res.status(400).json(`It appears this group doesn't exist.`);
+    }
     res.json(group);
   });
 });
@@ -32,7 +35,7 @@ router.get("/groups/:group/posts", (req, res) => {
 
 router.get("/groups/:group/members", (req, res) => {
   const { group } = req.params;
-  Group.findOne({ group_name: group }, "group_members", (error, group) => {
+  Group.findOne({ group_name: group }, "-_id group_members", (error, group) => {
     if (error) {
       res.status(500).json(`Error: ${error}`);
       return;
