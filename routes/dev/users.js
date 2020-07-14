@@ -4,7 +4,7 @@ const Post = require("../../models/post.model");
 const Message = require("../../models/message.model");
 const Group = require("../../models/group.model");
 
-router.get("/users", async (req, res) => {
+router.get("/users", (req, res) => {
   User.find()
     .then((users) => res.json(users))
     .catch((error) => res.status(400).json("Error: " + error));
@@ -31,7 +31,7 @@ router.get("/users/:username", (req, res) => {
   });
 });
 
-router.get("/users/:username/posts", async (req, res) => {
+router.get("/users/:username/posts", (req, res) => {
   const { username } = req.params;
   Post.find({ post_author: username }, (error, posts) => {
     if (error) {

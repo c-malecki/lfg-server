@@ -14,7 +14,7 @@ const messageSchema = new Schema({
     user_id: { type: String },
   },
   original_content: { type: String },
-  replies: { type: Array },
+  replies: [{ type: Object }],
 });
 
 const Message = mongoose.model("messages", messageSchema);

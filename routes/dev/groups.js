@@ -2,7 +2,7 @@ const router = require("express").Router();
 const Group = require("../../models/group.model");
 const Post = require("../../models/post.model");
 
-router.get("/groups", async (req, res) => {
+router.get("/groups", (req, res) => {
   Group.find()
     .then((groups) => res.json(groups))
     .catch((error) => res.status(400).json("Error: " + error));
