@@ -1,13 +1,14 @@
 {
-  "name": "lfg-server",
+  "name": "lfg-api-v1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Chris Malecki",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

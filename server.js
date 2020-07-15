@@ -25,21 +25,7 @@ connection.once("open", () => {
 
 const idx = require("./routes/routes-index");
 
-app.use("/api/v1", [
-  idx.devGroups,
-  idx.devLogin,
-  idx.devMessages,
-  idx.devPosts,
-  idx.devUsers,
-]);
-
-app.use("/api/test", [
-  idx.localGroups,
-  idx.localLogin,
-  idx.localMessages,
-  idx.localPosts,
-  idx.localUsers,
-]);
+app.use("/api/v1", [idx.groups, idx.login, idx.messages, idx.posts, idx.users]);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`);
