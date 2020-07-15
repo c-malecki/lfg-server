@@ -1,6 +1,12 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+const friendsSchema = new Schema({
+  friends_username_list: [{ type: String }],
+  accepted: [{ type: Object }],
+  pending: [{ type: Object }],
+});
+
 const userScehma = new Schema({
   user_id: { type: String },
   username: { type: String },
@@ -16,11 +22,7 @@ const userScehma = new Schema({
     last_name: { type: String },
     bio: { type: String },
   },
-  friends: {
-    friends_username_list: { type: Array },
-    accepted: { type: Array },
-    pending: { type: Array },
-  },
+  friends: friendsSchema,
   groups: {
     group_name_list: { type: Array },
     joined: { type: Array },
