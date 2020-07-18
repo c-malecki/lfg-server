@@ -11,12 +11,12 @@ router.get("/messages", (req, res) => {
 router.get("/messages/:id", (req, res) => {
   const { id } = req.params;
   Message.findOne({ message_thread_id: id }, (error, message) => {
-    if (error) {
-      res.status(500).json(`Error: ${error}`);
+    if (message === null) {
+      res.status(404).json(`This message doesn't appear to exist.`);
       return;
     }
-    if (message === null) {
-      res.status(400).json(`Uh oh. This message doesn't appear to exist.`);
+    if (error) {
+      res.status(500).json(`Error: ${error}`);
       return;
     }
     res.json(message);

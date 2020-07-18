@@ -23,6 +23,10 @@ router.get("/users/list", (req, res) => {
 router.get("/users/:username", (req, res) => {
   const { username } = req.params;
   User.findOne({ username: username }, (error, user) => {
+    if (user === null) {
+      res.status(404).json(`User ${username} not found.`);
+      return;
+    }
     if (error) {
       res.status(500).json(`Error: ${error}`);
       return;

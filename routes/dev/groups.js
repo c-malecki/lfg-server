@@ -10,38 +10,51 @@ router.get("/groups", (req, res) => {
 
 router.get("/groups/:group", (req, res) => {
   const { group } = req.params;
-  Group.findOne({ group_name: group }, (error, group) => {
+  Group.findOne({ group_name: group }, (error, foundGroup) => {
+    if (foundGroup === null) {
+      res.status(404).json(`${group} doesn't exist.`);
+      return;
+    }
     if (error) {
       res.status(500).json(`Error: ${error}`);
       return;
     }
-    if (group === null) {
-      res.status(400).json(`It appears this group doesn't exist.`);
-    }
-    res.json(group);
+    res.json(foundGroup);
   });
 });
 
 router.get("/groups/:group/posts", (req, res) => {
   const { group } = req.params;
-  Post.find({ posted_in: group }, (error, posts) => {
+  Post.find({ posted_in: group }, (error, foundGroup) => {
+    if (foundGroup === null) {
+      res.status(404).json(`${group} doesn't exist.`);
+      return;
+    }
     if (error) {
       res.status(500).json(`Error: ${error}`);
       return;
     }
-    res.json(posts);
+    res.json(foundGroup);
   });
 });
 
 router.get("/groups/:group/members", (req, res) => {
   const { group } = req.params;
-  Group.findOne({ group_name: group }, "-_id group_members", (error, group) => {
-    if (error) {
-      res.status(500).json(`Error: ${error}`);
-      return;
+  Group.findOne(
+    { group_name: group },
+    "-_id group_members",
+    (error, foundGroup) => {
+      if (foundGroup === null) {
+        res.status(404).json(`${group} doesn't exist.`);
+        return;
+      }
+      if (error) {
+        res.status(500).json(`Error: ${error}`);
+        return;
+      }
+      res.json(foundGroup);
     }
-    res.json(group);
-  });
+  );
 });
 
 module.exports = router;

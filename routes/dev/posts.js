@@ -13,6 +13,10 @@ router.get("/posts", (req, res) => {
 router.get("/posts/ids/:id", (req, res) => {
   const { id } = req.params;
   Post.findOne({ post_id: id }, (error, post) => {
+    if (post === null) {
+      res.status(404).json("Uh oh. It appears this post doesn't exist.");
+      return;
+    }
     if (error) {
       res.status(500).json(`Error: ${error}`);
       return;
@@ -22,7 +26,7 @@ router.get("/posts/ids/:id", (req, res) => {
 });
 
 // get all posts that have the tag
-router.get("/posts/bytags/:tag", (req, res) => {
+router.get("/posts/tags/:tag", (req, res) => {
   const { tag } = req.params;
   Post.find({ post_tags: tag }, (error, posts) => {
     if (error) {
