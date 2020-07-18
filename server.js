@@ -3,7 +3,9 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const PORT = process.env.PORT || 5000;
 require("dotenv").config();
+// for cronjob
 const cron = require("node-cron");
+const resetDatabase = require("./dumbydata/cronjob");
 
 const app = express();
 app.use(cors());
