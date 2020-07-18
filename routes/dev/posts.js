@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const Post = require("../../models/post.model");
-const PostTags = require("../../models/postTags.model");
 
 // get all posts
 router.get("/posts", (req, res) => {

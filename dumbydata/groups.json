@@ -1,0 +1,110 @@
+[
+  {
+    "group_id": "ta70s3d7-7bd6-dd9f-b9d4-3bdcbdae844b",
+    "group_name": "LFG",
+    "group_profile": {
+      "group_img": "https://lfg-images.s3.us-east-2.amazonaws.com/LFG.png",
+      "group_banner": "",
+      "date_created": "06/10/2020",
+      "description": "LFG general."
+    },
+    "group_members_usernames": ["Meeps", "TestUser"],
+    "group_members": [
+      {
+        "user_id": "22f3c9s4-a746-488d-a1ab-18d711b3c6df",
+        "username": "Meeps",
+        "member_id": "1",
+        "role": "admin",
+        "date_joined": "6/10/2020"
+      },
+      {
+        "user_id": "11f3c9s4-0746-488d-a1ab-18d711b3c6df",
+        "username": "TestUser",
+        "member_id": "2",
+        "role": "initiate",
+        "date_joined": "6/11/2020"
+      }
+    ]
+  },
+  {
+    "group_id": "da7043d7-7fb6-489f-b9d4-3b1cb2fe844b",
+    "group_name": "Diablo II LoD",
+    "group_profile": {
+      "group_img": "https://lfg-images.s3.us-east-2.amazonaws.com/Lod.png",
+      "group_banner": "",
+      "date_created": "06/10/2020",
+      "description": "A community that believes in games that age like fine wine. We all continue to love and explore the seemingly endless possbilities of Blizzard's master piece, Diablo II: LoD."
+    },
+    "group_members_usernames": ["Meeps", "TestUser"],
+    "group_members": [
+      {
+        "user_id": "22f3c9s4-a746-488d-a1ab-18d711b3c6df",
+        "username": "Meeps",
+        "member_id": "1",
+        "role": "admin",
+        "date_joined": "6/10/2020"
+      },
+      {
+        "user_id": "11f3c9s4-0746-488d-a1ab-18d711b3c6df",
+        "username": "TestUser",
+        "member_id": "2",
+        "role": "initiate",
+        "date_joined": "6/11/2020"
+      }
+    ]
+  },
+  {
+    "group_id": "da70s3d7-7bb6-389f-b9d4-3b1cbaae844b",
+    "group_name": "DogStuff",
+    "group_profile": {
+      "group_img": "https://lfg-images.s3.us-east-2.amazonaws.com/noprofilepic.jpg",
+      "group_banner": "",
+      "date_created": "06/11/2020",
+      "description": "We all are dog freaks."
+    },
+    "group_members_usernames": ["PuppyLuver1", "IAlsoLuvPuppies"],
+    "group_members": [
+      {
+        "user_id": "44f3c9s4-4746-488d-a1ab-18d711b3c6df",
+        "member_id": "1",
+        "username": "PuppyLuver1",
+        "role": "admin",
+        "date_joined": "6/11/2020"
+      },
+      {
+        "user_id": "33f3c9s4-3746-488d-a1ab-18d711b3c6df",
+        "username": "IAlsoLuvPuppies",
+        "member_id": "2",
+        "role": "initiate",
+        "date_joined": "6/11/2020"
+      }
+    ]
+  },
+  {
+    "group_id": "ta7ss3d7-1bd6-d33f-b9d4-3bscbd4e844b",
+    "group_name": "Oddballs",
+    "group_profile": {
+      "group_img": "https://lfg-images.s3.us-east-2.amazonaws.com/noprofilepic.jpg",
+      "group_banner": "",
+      "date_created": "06/11/2020",
+      "description": "Random oddities and stuff."
+    },
+    "group_members_usernames": ["YesMasta74", "StrangeAndFleek"],
+    "group_members": [
+      {
+        "user_id": "55f3c9s4-5746-488d-a1ab-18d711b3c6df",
+        "username": "YesMasta74",
+        "member_id": "1",
+        "role": "admin",
+        "date_joined": "6/11/2020"
+      },
+      {
+        "user_id": "66f3c9s4-6746-488d-a1ab-18d711b3c6df",
+        "username": "StrangeAndFleek",
+        "member_id": "2",
+        "role": "initiate",
+        "date_joined": "6/11/2020"
+      }
+    ]
+  }
+]

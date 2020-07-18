@@ -1,0 +1,69 @@
+[
+  {
+    "post_id": "ba7048d7-7fb6-479f-b9d4-3b10b2fe844b",
+    "post_author": "Meeps",
+    "date_posted": "06/11/2020, 12:06 PM",
+    "post_title": "Welcome to LFG",
+    "post_tags": ["lfg", "gamers"],
+    "posted_in": "LFG",
+    "post_content": "Looking For Gamers, or otherwise LFG, is a play on the gaming lingo acronym LFG which stands for 'Looking For Group.' LFG is a social media app to help gamers of all kinds, from retro or niche genres to modern and popular franchises, find a play group.",
+    "comments": [
+      {
+        "comment_id": "1a724827-73b6-479f-b1d4-3b10b2fe844b",
+        "date_posted": "06/11/2020, 12:22 PM",
+        "username": "IAlsoLuvPuppies",
+        "comment_content": "Awesome!"
+      },
+      {
+        "comment_id": "2a724827-73b6-479f-b1d5-3b60b27e844b",
+        "date_posted": "06/11/2020, 12:26 PM",
+        "username": "YesMasta74",
+        "comment_content": "Dope!"
+      }
+    ]
+  },
+  {
+    "post_id": "1f36da45-bd5a-4e41-a93b-d2ca47dd33c2",
+    "post_author": "PuppyLuver1",
+    "date_posted": "06/11/2020, 4:05 PM",
+    "post_title": "Best thing ever!",
+    "post_tags": ["dogs", "puppies"],
+    "posted_in": "DogStuff",
+    "post_content": "Blah blah blah, something about puppies, blah blah blah.",
+    "comments": [
+      {
+        "comment_id": "2a7248d7-7db6-479f-bdd5-3b60d27e844b",
+        "date_posted": "06/11/2020, 4:32 PM",
+        "username": "IAlsoLuvPuppies",
+        "comment_content": "Preach!"
+      }
+    ]
+  },
+  {
+    "post_id": "a797f2f5-5c1b-4093-a762-d092254dbb67",
+    "post_author": "YesMasta74",
+    "date_posted": "06/11/2020, 6:23 PM",
+    "post_title": "Is pineapple on pizza really that bad?",
+    "post_tags": ["food", "weird"],
+    "posted_in": "Oddballs",
+    "post_content": "Aren't we being a little hyperbolic these days about food preferences??",
+    "comments": [
+      {
+        "comment_id": "wa724cd7-7db6-c79f-bdd5-cb6cd27e844b",
+        "date_posted": "06/11/2020, 6:42 PM",
+        "username": "StrangeAndFleek",
+        "comment_content": "Have you ever tried black licorice on pizza? Get on my level."
+      }
+    ]
+  },
+  {
+    "post_id": "c798f2f5-5c1b-4093-a7g2-d0222d4dbb67",
+    "post_author": "Meeps",
+    "date_posted": "06/11/2020, 1:19 PM",
+    "post_title": "Diablo II calculator project",
+    "post_tags": ["ARPG", "Diablo"],
+    "posted_in": "Diablo II LoD",
+    "post_content": "I've been working on a project over time to create a full scale Diablo II character calcultor. Along side the calculator, I have been creating the first Diablo II public resource API to help other fans and developers create their own content or applications with ease.",
+    "comments": []
+  }
+]
