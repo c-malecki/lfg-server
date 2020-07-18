@@ -3,9 +3,6 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const PORT = process.env.PORT || 5000;
 require("dotenv").config();
-// for cronjob
-const cron = require("node-cron");
-const resetDatabase = require("./dumbydata/cronjob");
 
 const app = express();
 app.use(cors());
@@ -29,18 +26,6 @@ connection.once("open", () => {
 const idx = require("./routes/routes-index");
 
 app.use("/api/v1", [idx.groups, idx.login, idx.messages, idx.posts, idx.users]);
-
-// cronjob
-cron.schedule(
-  "49 23 * * *",
-  () => {
-    resetDatabase();
-  },
-  {
-    scheduled: true,
-    timezone: "America/New_York",
-  }
-);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`);
