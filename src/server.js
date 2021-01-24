@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === "production") {
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://lfg-site.netlify.app/", "https://flamboyant-sammet-7165ba.netlify.app/"],
+    origin: ["http://localhost:3000", "https://lfg-site.netlify.app", "https://flamboyant-sammet-7165ba.netlify.app"],
   })
 );
 
