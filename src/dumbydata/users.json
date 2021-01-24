@@ -8,7 +8,7 @@
       "email": "AnonAnimal72@email.com"
     },
     "profile": {
-      "user_img": "https://lfg-images.s3.us-east-2.amazonaws.com/moose.jpg",
+      "user_img": "https://assets-for-lfg.s3.us-east-2.amazonaws.com/moose.jpg",
       "banner_img": "",
       "first_name": "Anona",
       "last_name": "Moose",
@@ -35,12 +35,12 @@
           "sent_to": {
             "username": "Meeps",
             "user_id": "22f3c9s4-a746-488d-a1ab-18d711b3c6df",
-            "user_img": "https://lfg-images.s3.us-east-2.amazonaws.com/Meeps.jpg"
+            "user_img": "https://assets-for-lfg.s3.us-east-2.amazonaws.com/Meeps.jpg"
           },
           "sent_from": {
             "username": "TestUser",
             "user_id": "11f3c9s4-0746-488d-a1ab-18d711b3c6df",
-            "user_img": "https://lfg-images.s3.us-east-2.amazonaws.com/moose.jpg"
+            "user_img": "https://assets-for-lfg.s3.us-east-2.amazonaws.com/moose.jpg"
           }
         }
       ]
@@ -55,7 +55,7 @@
       "email": "chrismmalecki@gmail.com"
     },
     "profile": {
-      "user_img": "https://lfg-images.s3.us-east-2.amazonaws.com/Meeps.jpg",
+      "user_img": "https://assets-for-lfg.s3.us-east-2.amazonaws.com/Meeps.jpg",
       "banner_img": "",
       "first_name": "Chris",
       "last_name": "Malecki",
@@ -82,12 +82,12 @@
           "sent_to": {
             "username": "Meeps",
             "user_id": "22f3c9s4-a746-488d-a1ab-18d711b3c6df",
-            "user_img": "https://lfg-images.s3.us-east-2.amazonaws.com/Meeps.jpg"
+            "user_img": "https://assets-for-lfg.s3.us-east-2.amazonaws.com/Meeps.jpg"
           },
           "sent_from": {
             "username": "TestUser",
             "user_id": "11f3c9s4-0746-488d-a1ab-18d711b3c6df",
-            "user_img": "https://lfg-images.s3.us-east-2.amazonaws.com/moose.jpg"
+            "user_img": "https://assets-for-lfg.s3.us-east-2.amazonaws.com/moose.jpg"
           }
         }
       ]
@@ -102,7 +102,7 @@
       "email": "MorePuppiesPlz@email.com"
     },
     "profile": {
-      "user_img": "https://lfg-images.s3.us-east-2.amazonaws.com/LFGdefaultGreen.png",
+      "user_img": "https://assets-for-lfg.s3.us-east-2.amazonaws.com/LFGdefaultGreen.png",
       "banner_img": "",
       "first_name": "Buenovella",
       "last_name": "BeNice",
@@ -132,7 +132,7 @@
       "email": "BigRedDawg@email.com"
     },
     "profile": {
-      "user_img": "https://lfg-images.s3.us-east-2.amazonaws.com/LFGdefaultPurple.png",
+      "user_img": "https://assets-for-lfg.s3.us-east-2.amazonaws.com/LFGdefaultPurple.png",
       "banner_img": "",
       "first_name": "Emily",
       "last_name": "Elizabeth",
@@ -162,7 +162,7 @@
       "email": "ItsEyeGor@email.com"
     },
     "profile": {
-      "user_img": "https://lfg-images.s3.us-east-2.amazonaws.com/igor.jpg",
+      "user_img": "https://assets-for-lfg.s3.us-east-2.amazonaws.com/igor.jpg",
       "banner_img": "",
       "first_name": "Igor",
       "last_name": "Igor",
@@ -192,7 +192,7 @@
       "email": "LetsGetWeird@email.com"
     },
     "profile": {
-      "user_img": "https://lfg-images.s3.us-east-2.amazonaws.com/LFGdefaultRed.png",
+      "user_img": "https://assets-for-lfg.s3.us-east-2.amazonaws.com/LFGdefaultRed.png",
       "banner_img": "",
       "first_name": "Ally",
       "last_name": "Yankovic",

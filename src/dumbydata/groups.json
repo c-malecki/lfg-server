@@ -3,7 +3,7 @@
     "group_id": "ta70s3d7-7bd6-dd9f-b9d4-3bdcbdae844b",
     "group_name": "LFG",
     "group_profile": {
-      "group_img": "https://lfg-images.s3.us-east-2.amazonaws.com/LFG.png",
+      "group_img": "https://assets-for-lfg.s3.us-east-2.amazonaws.com/LFG.png",
       "group_banner": "",
       "date_created": "06/10/2020",
       "description": "LFG general."
@@ -30,7 +30,7 @@
     "group_id": "da7043d7-7fb6-489f-b9d4-3b1cb2fe844b",
     "group_name": "Diablo II LoD",
     "group_profile": {
-      "group_img": "https://lfg-images.s3.us-east-2.amazonaws.com/Lod.png",
+      "group_img": "https://assets-for-lfg.s3.us-east-2.amazonaws.com/Lod.png",
       "group_banner": "",
       "date_created": "06/10/2020",
       "description": "A community that believes in games that age like fine wine. We all continue to love and explore the seemingly endless possbilities of Blizzard's master piece, Diablo II: LoD."
@@ -57,7 +57,7 @@
     "group_id": "da70s3d7-7bb6-389f-b9d4-3b1cbaae844b",
     "group_name": "DogStuff",
     "group_profile": {
-      "group_img": "https://lfg-images.s3.us-east-2.amazonaws.com/noprofilepic.jpg",
+      "group_img": "https://assets-for-lfg.s3.us-east-2.amazonaws.com/noprofilepic.jpg",
       "group_banner": "",
       "date_created": "06/11/2020",
       "description": "We all are dog freaks."
@@ -84,7 +84,7 @@
     "group_id": "ta7ss3d7-1bd6-d33f-b9d4-3bscbd4e844b",
     "group_name": "Oddballs",
     "group_profile": {
-      "group_img": "https://lfg-images.s3.us-east-2.amazonaws.com/noprofilepic.jpg",
+      "group_img": "https://assets-for-lfg.s3.us-east-2.amazonaws.com/noprofilepic.jpg",
       "group_banner": "",
       "date_created": "06/11/2020",
       "description": "Random oddities and stuff."

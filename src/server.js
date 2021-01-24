@@ -5,7 +5,16 @@ const PORT = process.env.PORT || 5000;
 require("dotenv").config();
 
 const app = express();
-app.use(cors());
+if (process.env.NODE_ENV === "production") {
+  app.set("trust proxy", 1);
+}
+
+const originOptions = process.env.NODE_ENV === "production" ? "https://lfg-site.netlify.app/" : "http://localhost:3000";
+app.use(
+  cors({
+    origin: originOptions,
+  })
+);
 app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
