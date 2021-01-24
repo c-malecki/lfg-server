@@ -9,12 +9,12 @@ if (process.env.NODE_ENV === "production") {
   app.set("trust proxy", 1);
 }
 
-const originOptions = process.env.NODE_ENV === "production" ? "https://lfg-site.netlify.app/" : "http://localhost:3000";
 app.use(
   cors({
-    origin: originOptions,
+    origin: ["http://localhost:3000", "https://lfg-site.netlify.app/", "https://flamboyant-sammet-7165ba.netlify.app/"],
   })
 );
+
 app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
